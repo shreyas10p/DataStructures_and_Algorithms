@@ -1,3 +1,7 @@
+from os import sys, path
+
+sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
+
 class Stack(object):
     """docstring for Stack"""
     def __init__(self):
@@ -38,16 +42,16 @@ class ListNode(object):
         self.data = data
         self.next = None
 
-if __name__ == '__main__':
-    stack_obj = Stack()
-    stack_obj.push(2)
-    stack_obj.push(3)
-    stack_obj.push(7)
-    stack_obj.push(10)
-    stack_obj.push(19)
-    stack_obj.push(18)
-    reverse_list = []
-    for x in range(stack_obj.length()):
-        reverse_list.append(stack_obj.pop())
+# if __name__ == '__main__':
+#     stack_obj = Stack()
+#     stack_obj.push(2)
+#     stack_obj.push(3)
+#     stack_obj.push(7)
+#     stack_obj.push(10)
+#     stack_obj.push(19)
+#     stack_obj.push(18)
+#     reverse_list = []
+#     for x in range(stack_obj.length()):
+#         reverse_list.append(stack_obj.pop())
 
-    print(reverse_list)
+#     print(reverse_list)

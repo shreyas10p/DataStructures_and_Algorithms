@@ -1,4 +1,7 @@
 from array_name import Array
+from os import sys, path
+
+sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
 class Array2D:
     """docstring for Array2D"""
@@ -62,12 +65,12 @@ class _ArrayIterator(object):
             raise StopIteration
 
 
-if __name__ == '__main__':
-    array2d = Array2D(2,3)
-    array2d[0,1] = 56
-    array2d[0,2] = 1
-    print(array2d[0,1])
-    print(array2d[0,0])
-    print(array2d)
-    for x in range(array2d.numRows()):
-        print(array2d[x,1])
+# if __name__ == '__main__':
+#     array2d = Array2D(2,3)
+#     array2d[0,1] = 56
+#     array2d[0,2] = 1
+#     print(array2d[0,1])
+#     print(array2d[0,0])
+#     print(array2d)
+#     for x in range(array2d.numRows()):
+#         print(array2d[x,1])
