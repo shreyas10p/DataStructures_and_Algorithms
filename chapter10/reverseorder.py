@@ -19,4 +19,4 @@ if __name__ == '__main__':
     ans = fact(10)
     print(ans)
     # printRev(10)
-    # printInc(10)
+    printInc(10)

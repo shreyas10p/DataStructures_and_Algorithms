@@ -4,8 +4,11 @@ DATA STRUCTURE AND ALGORITHMS USING PYTHON.
 Chapter2:-
 array.py:- One dimensional Array Abstract Data Type(ADT) of fixed size.
 array2d_file.py:- Two dimensional Array ADT of fixed number of rows and columns.
+-----------
 counter.py:- Counter ADT
+------------
 matrix.py:- Matrix ADT using 2D array to perform matrix operations.
+------------
 gameoflife.py:-
 The game uses an infinite-sized rectangular grid of cells in which each cell is either
 empty or occupied by an organism. The occupied cells are said to be alive, whereas
@@ -26,30 +29,39 @@ generation
 -------------------------------------------------------------------------------
 
 set_using_list.py:- python Set ADT using python list.
+------
 map_using_list.py:- python Map ADT using python list.
+-------
 lowertriangle.py:- Lower triangular 2D array.
 
 ------------------------------------------------------------------------------
 
 sparxMatrix.py:- Sparse Matrix ADT
+--------------
 sparxLifeGrid.py:- Efficient implementation of  game of life using SparxMatix ADT.
 
 --------------------------------------------------------------------------
 
 binarysearchset:- Implementation of binary search in set.
+----------------
 SparxMatrixSort.py:- Arrange Elements of sparx matrix in sorted order.
 
 ----------------------------------------------------------------------------
 llistBag.py:- Bag ADT using linkedList.
+-----------------
 polynomial.py:- Polynomial using linkedlist.
+-----------------
 llistBigInteger.py:- Big Integer ADT using LinkedList.
+-----------------
 sortedllist.py:- Sorted linked list .
 
 -----------------------------------------------------------------------------
 lliststack.py:- Stack using linkedlist
+------------------
 stack_using_list.py:- Stack using list.
 
 -----------------------------------------------------------------------------
 arrayqueue.py:- Queue ADT using Array.
+-------------------
 llistqueue.py:- Queue ADT using Linked List.
 
