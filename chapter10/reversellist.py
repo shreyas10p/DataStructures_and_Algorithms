@@ -9,9 +9,6 @@ if __name__ == '__main__':
         import sys
         from os import path
         sys.path.append( path.dirname(path.dirname(path.abspath(__file__)))+'/chapter6' )
-
-        # print(sys.path.append())
-        print()
         from linkedList import linkedList
     else:
         from ..chapter6.linkedList import linkedList
