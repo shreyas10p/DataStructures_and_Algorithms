@@ -36,11 +36,12 @@ class QueensBoard(object):
         for i in range(self._size):
             self._board[i] = None
 
-    def solveNQueens( self, col ):
+    def solveNQueens( self, row ):
+
         if self.numQueens() == self.size() :
             return True
         else :
-            for row in range( self.size() ):
+            for col in range( self.size() ):
                 if self.unguarded( row, col ):
                     self.placeQueen( row, col )
                     if self.solveNQueens(  col+1 ) :
@@ -61,6 +62,6 @@ if __name__ == '__main__':
     else:
         from ..Chapter2.array import Array
     board = QueensBoard(8)
-    board.solveNQueens(0)
+    board.solveNQueens(1)
     for i in range(board.size()):
         print(board._board[i])
