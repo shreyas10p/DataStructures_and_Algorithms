@@ -50,7 +50,7 @@ class QueensBoard(object):
                         self.removeQueen( row, col )
 
         return False
-
+#TODO 10.2 , 10.3 and 10.4
 
 if __name__ == '__main__':
     if __package__ is None:
