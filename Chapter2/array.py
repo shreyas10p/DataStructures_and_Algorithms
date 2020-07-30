@@ -47,8 +47,4 @@ class _ArrayIterator(object):
         else :
             raise StopIteration
 
-# if __name__ == '__main__':
-#     arr = Array(9)
-#     print(arr)
-#     for x in range(len(arr)):
-#         print(arr[x])
+
