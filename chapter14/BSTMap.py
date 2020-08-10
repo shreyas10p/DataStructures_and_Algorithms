@@ -1,3 +1,6 @@
+from .Chapter2.array import Array
+
+
 class BSTMap(object):
     """docstring for BSTMap"""
     def __init__(self):
@@ -98,6 +101,33 @@ class _BSTMapNode(object):
         self._val = val
         self._left = None
         self._right = None
+
+class _BSTMapIterator(object):
+    """docstring for _BSTMapIterator"""
+    def __init__(self,root,size):
+        self._array = Array(size)
+        self._curItem = 0
+        self._bstTraversal(root)
+        self._curItem
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self._curItem < len( self._theKeys ) :
+            key = self._theKeys[ self._curItem ]
+            self._curItem += 1
+            return key
+        else :
+            raise StopIteration
+
+    def _bstTraversal(self,subTree):
+        if(subTree is not None):
+            self._bstTraversal(subTree._left)
+            self._array[self._curItem] = subTree._key
+            self._curItem +=1
+            self._bstTraversal(subTree._right)
+
 
 if __name__ == '__main__':
     arr = [60, 25, 100, 35, 17, 80]
